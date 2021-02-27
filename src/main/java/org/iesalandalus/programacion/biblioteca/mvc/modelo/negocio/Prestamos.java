@@ -80,7 +80,7 @@ public class Prestamos {
 	}
 
 	private boolean mismoMes(LocalDate mes1, LocalDate mes2) {
-		return mes1.equals(mes2);
+		return mes1.getMonth().equals(mes2.getMonth()) && mes1.getYear() == mes2.getYear();
 	}
 
 	public int getTamano() {

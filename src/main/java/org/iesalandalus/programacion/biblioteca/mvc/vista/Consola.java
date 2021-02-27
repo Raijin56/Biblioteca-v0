@@ -77,8 +77,8 @@ public class Consola {
 	}
 
 	public static Prestamo leerPrestamo() {
-		Alumno alumno = leerAlumno();
-		Libro libro = leerLibro();
+		Alumno alumno = leerAlumnoFicticio();
+		Libro libro = leerLibroFicticio();
 		String mensajeFechaPrestamo = "Introduce la fecha del préstamo";
 		LocalDate fechaPrestamo = leerFecha(mensajeFechaPrestamo);
 		return new Prestamo(alumno, libro, fechaPrestamo);
