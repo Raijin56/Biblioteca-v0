@@ -79,8 +79,8 @@ public class Prestamos {
 		return prestamosMes;
 	}
 
-	private boolean mismoMes(LocalDate mes1, LocalDate mes2) {
-		return mes1.getMonth().equals(mes2.getMonth()) && mes1.getYear() == mes2.getYear();
+	private boolean mismoMes(LocalDate fecha1, LocalDate fecha2) {
+		return fecha1.getMonthValue() == fecha2.getMonthValue() && fecha1.getYear() == fecha2.getYear();
 	}
 
 	public int getTamano() {
